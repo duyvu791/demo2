@@ -53,11 +53,3 @@ http.createServer(function (req,res){
 }).listen(process.env.PORT || '3000');
 
 
-// var port = normalizePort(process.PORT || '3000');
-// app.set('port',port);
-//
-// var server = http.createServer(app);
-//
-// server.listen(port);
-// server.on('error',onerror);
-// server.on('listening',onListening);
