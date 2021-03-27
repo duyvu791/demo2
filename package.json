@@ -8,7 +8,7 @@
   "main": "index.js",
   "devDependencies": {},
   "scripts": {
-    "start": "node demo2.js"
+    "start": "node index.js"
   },
   "keywords": [
     "FREE"
