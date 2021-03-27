@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var cal = require('./cal');
 var fs = require('fs');
-
+//
 http.createServer(function (req,res){
     res.writeHead(200,{'Content-Type' :  'text/html'});
     var tong = cal.tinhTong(3,5);
@@ -50,6 +50,14 @@ http.createServer(function (req,res){
         });
     }
 
-}).listen(8080);
+}).listen(process.env.PORT || '3000');
 
 
+// var port = normalizePort(process.PORT || '3000');
+// app.set('port',port);
+//
+// var server = http.createServer(app);
+//
+// server.listen(port);
+// server.on('error',onerror);
+// server.on('listening',onListening);
